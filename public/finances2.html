@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link href="assets/css/mapsvg.css" rel="stylesheet">
+      <link href="assets/css/nanoscroller.css" rel="stylesheet">
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/jquery.mousewheel.min.js"></script>
+      <script src="assets/js/jquery.nanoscroller.min.js"></script>
+      <script type="text/javascript" src="assets/js/mapsvg.min.js"></script>
+      <link rel="stylesheet" href="https://use.typekit.net/yti7aig.css">
+    <title>UNDP Finances</title>
+  </head>
+  <body>
+     <!-- section 3 -->
+    <div class="container-fluid">
+       <div class="row d-block">
+      <div class="equal-height  row focus-sec-bg py-5 d-flex justify-content-center mx-0">
+          <div id="mapsvg-map1"></div>
+      </div>
+    </div>
+    </div>
+   
+    
+
+
+   <script type="text/javascript">
+    jQuery(document).ready(function(){
+    jQuery("#mapsvg-map1").mapSvg({width: 495,height: 620,regions:{
+      'United States1': {id: "United States1",'id_no_spaces': "United_States1",fill: "rgba(55,30,84,1)",tooltip: "<p class=\"titlepop\">United States</p>\n<h3 class=\"amountblack\">$000,521,352</h3>",data: {}},
+      'Netherlands1': {id: "Netherlands1",'id_no_spaces': "Netherlands1",fill: "rgba(102,51,142,1)",tooltip: "<p class=\"titlepop\">Netherlands</p>\n<h3 class=\"amountblack\">$79,896,142</h3>",data: {}},
+      'CPR-TTF1': {id: "CPR-TTF1",'id_no_spaces': "CPR-TTF1",fill: "rgba(123,89,155,1)",tooltip: "<p class=\"titlepop\">CPR-TTF</p>\n<h3 class=\"amountblack\">$36,004,440</h3>",data: {}},
+      'Sweden1': {id: "Sweden1",'id_no_spaces': "Sweden1",fill: "rgba(21,127,192,1)",tooltip: "<p class=\"titlepop\">Sweden</p>\n<h3 class=\"amountblack\">$11,689,587</h3>",data: {}},
+      'UNDP Core Funds1': {id: "UNDP Core Funds1",'id_no_spaces': "UNDP_Core Funds1",fill: "rgba(2,101,181,1)",tooltip: "<p class=\"titlepop\">UNDP Core Funds</p>\n<h3 class=\"amountblack\">$11,634,846</h3>",data: {}},
+      'Japan1': {id: "Japan1",'id_no_spaces': "Japan1",fill: "rgba(2,53,95,1)",tooltip: "<p class=\"titlepop\">Japan</p>\n<h3 class=\"amountblack\">$9,000,000</h3>",data: {}},
+      'Canada1': {id: "Canada1",'id_no_spaces': "Canada1",fill: "rgba(86,104,58,1)",tooltip: "<p class=\"titlepop\">Canada</p>\n<h3 class=\"amountblack\">$8,953,763</h3>",data: {}},
+      'Germany1': {id: "Germany1",'id_no_spaces': "Germany1",fill: "rgba(114,150,67,1)",tooltip: "<p class=\"titlepop\">Germany</p>\n<h3 class=\"amountblack\">$8,402,405</h3>",data: {}},
+      'Switzerland1': {id: "Switzerland1",'id_no_spaces': "Switzerland1",fill: "rgba(154,178,114,1)",tooltip: "<p class=\"titlepop\">Switzerland</p>\n<h3 class=\"amountblack\">$5,258,438</h3>",data: {}},
+      'Australia1': {id: "Australia1",'id_no_spaces': "Australia1",fill: "rgba(244,199,74,1)",tooltip: "<p class=\"titlepop\">Australia</p>\n<h3 class=\"amountblack\">$4,443,307</h3>",data: {}},
+      'Denmark1': {id: "Denmark1",'id_no_spaces': "Denmark1",fill: "rgba(191,139,46,1)",tooltip: "<p class=\"titlepop\">Denmark</p>\n<h3 class=\"amountblack\">$3,739,940</h3>",data: {}},
+      'UNACTIONMPTF1': {id: "UNACTIONMPTF1",'id_no_spaces': "UNACTIONMPTF1",fill: "rgba(142,96,22,1)",tooltip: "<p class=\"titlepop\">UN Action MPTF</p>\n<h3 class=\"amountblack\">$3,729,102</h3>",data: {}},
+      'Norway1': {id: "Norway1",'id_no_spaces': "Norway1",fill: "rgba(130,6,27,1)",tooltip: "<p class=\"titlepop\">Norway</p>\n<h3 class=\"amountblack\">$3,681,501</h3>",data: {}},
+      'Belgium1': {id: "Belgium1",'id_no_spaces': "Belgium1",fill: "rgba(204,106,0,1)",tooltip: "<p class=\"titlepop\">Belgium</p>\n<h3 class=\"amountblack\">$2,529,780</h3>",data: {}},
+      'United-Kindom1': {id: "United-Kindom1",'id_no_spaces': "United-Kindom1",fill: "rgba(253,157,36,1)",tooltip: "<p class=\"titlepop\">United Kindom</p>\n<h3 class=\"amountblack\">$2,458,795</h3>",data: {}},
+      'PrivateALL': {id: "PrivateALL",'id_no_spaces': "PrivateALL",fill: "rgba(255,255,0,1)",tooltip: "<p class=\"amountgrey\">France <span class=\"amountblacklast\">$554,800</span></p>\n<p class=\"amountgrey\">Luxembourg <span class=\"amountblacklast\">$538,206</span></p>\n<p class=\"amountgrey\">Qatar <span class=\"amountblacklast\">$508,680</span></p>\n<p class=\"amountgrey\">Ireland <span class=\"amountblacklast\">$393,288</span></p>\n<p class=\"amountgrey\">UNHCR <span class=\"amountblacklast\">$246,407</span></p>\n<p class=\"amountgrey\">EOSG <span class=\"amountblacklast\">$18,496</span></p>\n<p class=\"amountgrey\">Austria <span class=\"amountblacklast\">$5,738</span></p>\n<p class=\"amountgrey\">Private Contribution <span class=\"amountblacklast\">$1,000</span></p>",data: {}}},viewBox: [0,0,495,620],gauge: {on: false,labels: {low: "low",high: "high"},colors: {lowRGB: {r: 85,g: 0,b: 0,a: 1},highRGB: {r: 238,g: 0,b: 0,a: 1},low: "#550000",high: "#ee0000",diffRGB: {r: 153,g: 0,b: 0,a: 0}},min: 0,max: false},source: "assets/svg/finance-cumulative-resources.svg",title: "Finance cumulative resources",responsive: true});
+    });
+    </script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="assets/js/bootstrap.min.js" ></script>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
+
+

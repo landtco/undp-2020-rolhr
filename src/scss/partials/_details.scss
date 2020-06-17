@@ -1,0 +1,68 @@
+/*******************************************
+  DETAILS
+  src/scss/partials/_details.scss
+*******************************************/
+
+
+.country_details {
+	position: absolute;
+	height: 0;
+	left: 1px;
+	color: white;
+	overflow: hidden;
+	transition: background $transition_short;
+	z-index: 900;
+	top: 135px;
+
+	@include mq('tablet') {
+		z-index: 799;
+		top: auto;
+		max-width: 80%;
+		bottom: 315px;
+	}
+
+	@include mq('desktop') {
+		max-width: calc(100% - 500px);
+		bottom: 205px;
+	}
+
+	@include mq(1000px) {
+		bottom: 187px;
+	}
+
+	.tile__content { height: 100%; }
+
+
+	h3 {
+		padding-top: 50px;
+		text-align: center;
+
+		@include mq('tablet') { padding-top: 0; text-align: left; }
+	}
+	
+	ul {
+		padding-bottom: 2px;
+	}
+
+	a.details_link {
+		padding: 8px 15px;
+	    display: inline-block;
+	    border: 1px solid $white;
+	    //margin-left: 24px;
+	    text-transform: uppercase;
+	    color: $white;
+	    font-weight: $weight_bold;
+	    text-decoration: none;
+	    margin-bottom: 5px;
+	    transition: $transition_short;
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    width: 180px;
+	    transform: translateX(-50%);
+
+	    @include mq('tablet') { position: relative; top: auto; left: auto; transform: none; width: auto; }
+
+	    &:hover { background: rgba($white, 0.2); }
+	}
+}

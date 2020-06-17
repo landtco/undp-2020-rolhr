@@ -1,0 +1,71 @@
+/*******************************************
+  VARIABLES
+  src/scss/modules/_variables.scss
+*******************************************/
+
+
+
+
+/*********************
+COLORS
+tool to find real color names for variables
+http://chir.ag/projects/name-that-color/#6195ED
+*********************/
+
+$white		: 	#FFFFFF;
+$black  	: 	#000000;
+
+$off_white		: 	#F2F2F2;
+$blue_primary   :   #006BB6;
+$blue_vlight	:   #F2FAFF;
+$blue_light     :   #66C1FC;
+$blue_dark      :   #23303F;
+$blue_bg 		:   #041524;
+$orange         :   #F7931E;
+$orange_dark	: 	#E87E15;
+
+$gray			: 	#948E89;
+
+
+
+
+
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+$font_primary 	: 	"proxima-nova";
+$weight_primary :	400;
+$weight_mid     :   700;
+$weight_bold 	:	800;
+
+$font_units : rem;
+
+
+
+
+
+/*********************
+BREAKPOINTS
+*********************/
+
+// Next Gen
+$breakpoints: (
+    "phone-wide"	: 	400px,
+    //"phablet"		: 	560px,
+    //"tablet-small"	: 	640px,
+    "tablet"		: 	700px,
+    //"tablet-wide"	: 	1024px,
+    "desktop"		: 	960px,
+    "desktop-wide"	: 	1440px
+);
+
+
+/*********************
+TRANSITIONS
+*********************/
+
+$transition_short : 0.2s ease-in-out; 
+$transition_long : 0.45s ease-in-out;
+$transition_verylong : 1s ease-in-out;

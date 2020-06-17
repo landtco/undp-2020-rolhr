@@ -1,0 +1,21 @@
+﻿
+.mapsvg svg {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*overflow: visible !important;*/
+    max-width: none !important;
+    max-height: none !important;
+    width: 48%;
+    height: auto;
+    /*height: 100vh;*/
+    position: relative;
+    -webkit-transition: transform .40s;
+    -moz-transition: transform .40s;
+    -ms-transition: transform .40s;
+    -o-transition: transform .40s;
+    transition: transform .40s;
+    transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+}

@@ -1,0 +1,69 @@
+
+/*******************************************
+ STYLESHEET
+********************************************/
+
+
+/*********************
+IMPORTING MODULES
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
+
+//***************** CSS normalize
+@import "modules/normalize";
+
+//***************** Sass variables
+@import "modules/variables";
+
+//***************** Sass functions
+@import "modules/functions";
+
+//***************** import mixins
+@import "modules/mixins";
+
+//***************** typography
+@import "modules/typography";
+
+
+@import "modules/font_icons";
+
+
+/*********************
+IMPORTING PARTIALS
+Partials are reusable blocks or elements we use throughout the project.
+We can break them up as much as we want or just keep them all in one.
+*********************/
+
+//***************** alert boxes
+@import "partials/header";
+@import "partials/footer";
+@import "partials/map";
+@import "partials/list";
+@import "partials/details";
+@import "partials/tiles";
+
+
+
+
+/*********************
+IMPORTING VIEWS
+project specific and contain view or page specific styles 
+except for _base which is global stuff
+*********************/
+
+//***************** import base (misc global stuff)
+@import "views/base";
+
+
+
+/*********************
+IMPORTING VENDOR STYLES
+Pulls in any third party styles
+*********************/
+
+//***************** import vendor styles
+@import "vendor/mapsvg";
+
+

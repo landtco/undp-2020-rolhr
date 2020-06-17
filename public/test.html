@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link href="assets/css/mapsvg.css" rel="stylesheet">
+      <link href="assets/css/nanoscroller.css" rel="stylesheet">
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/jquery.mousewheel.min.js"></script>
+      <script src="assets/js/jquery.nanoscroller.min.js"></script>
+      <script type="text/javascript" src="assets/js/mapsvg.min.js"></script>
+      <link rel="stylesheet" href="https://use.typekit.net/yti7aig.css">
+    <title>UNDP Finances 1</title>
+  </head>
+  <body>
+
+  
+    <!-- section 2 -->
+    <div class="container-fluid p-0">
+      
+      <div id="cont1" class="equal-height row focus-sec-bg py-5 d-flex justify-content-center mx-0">
+         <div id="mapsvg"></div>
+      </div>
+    </div>
+   
+    <!--  -->
+    
+
+   <script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery("#mapsvg").mapSvg({width: 495,height: 630,regions: {
+  canada: {id: "canada",'id_no_spaces': "canada",fill: "rgba(114,150,67,1)",data: {country: "Canada",value: "$894444444,897.18"}},
+  germany: {id: "germany",'id_no_spaces': "germany",fill: "rgba(191,139,46,1)",data: {country: "Germany",value: "$200,116.00"}},
+  netherlands: {id: "netherlands",'id_no_spaces': "netherlands",fill: "rgba(2,53,95,1)",data: {country: "Netherlands",value: "$7,963,595.00"}},
+  norway: {id: "norway",'id_no_spaces': "norway",fill: "rgba(55,30,84,1)",data: {country: "Norway",value: "$238,180.30"}},
+  },viewBox: [0,0,495,630],mouseOver: function(
+){
+
+
+    var region = this;
+    if (typeof region.data.country != "undefined") {
+     $('#cont1').append('<div class="tooltip-message"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+    }
+
+  },mouseOut: function(
+  ) {
+
+    $('.tooltip-message').remove();
+
+  }, source: "assets/svg/test.svg",
+    title: "Finance contributions",responsive: true});
+  });
+  </script>
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="assets/js/bootstrap.min.js" ></script>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
+
+

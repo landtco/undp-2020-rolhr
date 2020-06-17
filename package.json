@@ -1,0 +1,21 @@
+{
+  "name": "undp2017",
+  "version": "1.0.0",
+  "description": "Visually UNDP 2017 Interactive Map",
+  "main": "index.html",
+  "scripts": {
+    "clean": "rm -rf assets/js/* && rm -rf assets/css/*",
+    "sass": "sass src/scss/style.scss:public/assets/css/style.css",
+    "webpack": "webpack --devtool sourcemap",
+    "dev": "echo '=> Bundle JS' && npm run webpack && echo '=> Compile SASS' && npm run sass",
+    "dev_watch": "npm run sass -- --watch | npm run webpack -- --watch",
+    "build": "echo '=> Bundle JS' && npm run webpack -- -p && echo '=> Compile SASS' && npm run sass -- --style compressed",
+    "build_watch": "npm run webpack -- --watch -p |  npm run sass -- --watch --style compressed"
+  },
+  "keywords": [],
+  "author": "Steve McMillen",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

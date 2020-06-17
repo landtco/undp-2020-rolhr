@@ -1,0 +1,98 @@
+/*******************************************
+  MAP
+  src/scss/partials/_map.scss
+*******************************************/
+
+
+.map {
+	background: $blue_bg;
+	position: relative;
+	z-index: 600;
+	height: calc(100% - 330px);
+	margin-top: -1px;
+
+	@include mq('phone-wide') { height: calc(100% - 400px); }
+	@include mq('tablet') { height: calc(100% - 419px); }
+	@include mq('desktop') { height: calc(100% - 323px); }
+	@include mq(1000px) { height: calc(100% - 303px); }
+
+	.zoom__housing {
+		position: absolute;
+		top: 100px;
+		left: 45px;
+		display: none;
+		z-index: 605;
+
+		@include mq('tablet') { display: block; }
+
+		div {
+			background: $blue_primary;
+			width: 33px;
+			height: 33px;
+			border-radius: 60px;
+			cursor: pointer; 
+		}
+
+		#zoom_in {
+			margin-bottom: 10px;
+			background: url('../images/plus.svg') $blue_primary;
+			background-position: center;
+			background-size: 60%; 
+			background-repeat: no-repeat; 
+		}
+
+		#zoom_out {
+			background: url('../images/minus.svg') $blue_primary;
+			background-position: center;
+			background-size: 60%; 
+			background-repeat: no-repeat; 
+		}
+	}
+
+	#mapsvg {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	#mapcover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 601;
+
+		@include mq('tablet') { display: none; }
+	}
+
+	#instructions {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 602;
+
+			.tile__content {
+				background: rgba($gray, 0.9);
+			    width: 90%;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+
+			    @include mq('tablet') {
+					width: 400px;
+				    position: absolute;
+				    top: 50px;
+				    left: 150px;
+				    transform: none;
+			    }
+			    @include mq('desktop') {}
+
+			    p { font-weight: $weight_mid; }
+
+
+			}
+	}
+}
