@@ -86,7 +86,7 @@ countries = {
 		]
 	},
 	"Eli" : {
-		"alt_title" : "Pakistan",
+		"alt_title" : "Eli",
 		"disabled" : false,
 		"active_fill" : "#212F3C",
 		"link" : "http://www.undp.org/content/dam/undp/library/Democratic%20Governance/ROL_AR2017/UNDP-2017-CountryProfile-Kosovo.pdf",
@@ -95,7 +95,7 @@ countries = {
 		]
 	},
 	"Burundi" : {
-		"alt_title" : "Pakistan",
+		"alt_title" : "Burundi",
 		"disabled" : false,
 		"active_fill" : "#212F3C",
 		"link" : "http://www.undp.org/content/dam/undp/library/Democratic%20Governance/ROL_AR2017/UNDP-2017-CountryProfile-Kosovo.pdf",
