@@ -14,7 +14,7 @@
       <script src="assets/js/jquery.nanoscroller.min.js"></script>
       <script type="text/javascript" src="assets/js/mapsvg.min.js"></script>
       <link rel="stylesheet" href="https://use.typekit.net/yti7aig.css">
-      <title>UNDP - 2019 Contributions</title>
+    <title>UNDP - 2019 Overall Support</title>
   </head>
   <body>
 
@@ -36,16 +36,19 @@
         width: 10000,
         height: 10000,
         regions: {
-          netherlands: {id: "netherlands",'id_no_spaces': "netherlands",fill: "#004c69",data: {country: "The Netherlands",value: "$10,035,295.00"}},
-          sweden: {id: "sweden",'id_no_spaces': "sweden",fill: "#11baad",data: {country: "Sweden",value: "$1,691,557.00"}},
-          core: {id: "core",'id_no_spaces': "core",fill: "#92c959",data: {country: "UNDP Core Funds (Staffing)",value: "$1,297,863.00"}},
-          switzerland: {id: "switzerland",'id_no_spaces': "switzerland",fill: "#00b05f",data: {country: "Switzerland",value: "$995,976.00"}},
-          uk: {id: "uk",'id_no_spaces': "uk",fill: "#c9e091",data: {country: "United Kingdom",value: "$640,769.00"}},
-          norway: {id: "norway",'id_no_spaces': "norway",fill: "#fbdc54",data: {country: "Norway",value: "$326,975.00"}},
-          us: {id: "us",'id_no_spaces': "us",fill: "#0096d4",data: {country: "United States",value: "$16,336,161.00"}},
-          canada: {id: "canada",'id_no_spaces': "canada",fill: "#0265b5",data: {country: "Canada",value: "$1,994,680.00"}},
+          technical_capacity: {id: "technical_capacity",'id_no_spaces': "technical_capacity",fill: "#0265B5",data: {country: "Technical Capacity",value: "$2,929,617"}},
+          policy_development: {id: "policy_development",'id_no_spaces': "policy_development",fill: "#005772",data: {country: "Policy Development",value: "$423,304"}},
+          policy_development_sdg: {id: "policy_development_sdg",'id_no_spaces': "policy_development_sdg",fill: "#00E0D5",data: {country: "Policy Development (SDG16)",value: "$84,115"}},
+          policy_development_human: {id: "policy_development_human",'id_no_spaces': "policy_development_human",fill: "#11BAAD",data: {country: "Policy Development (SDG16)",value: "$76,729"}},
+          knowledge_management: {id: "knowledge_management",'id_no_spaces': "knowledge_management",fill: "#A5F238",data: {country: "Knowledge Management",value: "$95,326"}},
+          knowledge_management: {id: "knowledge_management",'id_no_spaces': "knowledge_management",fill: "#A5F238",data: {country: "Knowledge Management",value: "$95,326"}},
+          global_capacity: {id: "global_capacity",'id_no_spaces': "global_capacity",fill: "#CC193B",data: {country: "Global Capacity Building and UN Agency Grants",value: "$537,457"}},
+          field_support: {id: "field_support",'id_no_spaces': "field_support",fill: "#FBDC54",data: {country: "Field Support from HQ",value: "$215,529"}},
+          programme_support: {id: "programme_support",'id_no_spaces': "programme_support",fill: "#6721C1",data: {country: "Programme Support",value: "$671,607"}},
+          support_costs: {id: "support_costs",'id_no_spaces': "support_costs",fill: "#424A55",data: {country: "Support Costs (GMS) - 8%",value: "$402,695"}},
+          
         },
-        viewBox: [0,0,1800,1800],
+        viewBox: [0,0,720,720],
         mouseOver: function(){
           var region = this;
           if (typeof region.data.country != "undefined") {
@@ -55,7 +58,7 @@
         mouseOut: function() {
           $('.tooltip-message').remove();
         }, 
-      source: "assets/svg/2019contribs_web_web.svg",
+      source: "assets/svg/overall-support_web-01.svg",
       title: "Finance contributions",
       responsive: true
     });
