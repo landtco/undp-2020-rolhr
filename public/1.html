@@ -31,32 +31,34 @@
     
 
    <script type="text/javascript">
-jQuery(document).ready(function(){
-jQuery("#mapsvg").mapSvg({width: 495,height: 630,regions: {
-  netherlands: {id: "netherlands",'id_no_spaces': "netherlands",fill: "#004c69",data: {country: "The netherlands",value: "$10,035,295.00"}},
-  sweden: {id: "sweden",'id_no_spaces': "sweden",fill: "#11baad",data: {country: "Sweden",value: "$1,691,557.00"}},
-  core: {id: "core",'id_no_spaces': "core",fill: "#92c959",data: {country: "UNDP Core Funds (Staffing)",value: "$1,297,863.00"}},
-  switzerland: {id: "switzerland",'id_no_spaces': "switzerland",fill: "#00b05f",data: {country: "Switzerland",value: "$995,976.00"}},
-  uk: {id: "uk",'id_no_spaces': "uk",fill: "#c9e091",data: {country: "United Kingdom",value: "$640,769.00"}},
-  norway: {id: "norway",'id_no_spaces': "norway",fill: "#fbdc54",data: {country: "Norway",value: "$326,975.00"}},
-  us: {id: "us",'id_no_spaces': "us",fill: "#0096d4",data: {country: "United States",value: "$16,336,161.00"}},
-  canada: {id: "canada",'id_no_spaces': "canada",fill: "#0265b5",data: {country: "Canada",value: "$1,994,680.00"}},
-  },viewBox: [0,0,495,630],mouseOver: function(
-){
-
-
-    var region = this;
-    if (typeof region.data.country != "undefined") {
-     $('#cont1').append('<div class="tooltip-message"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
-    }
-
-  },mouseOut: function(
-  ) {
-
-    $('.tooltip-message').remove();
-
-  }, source: "assets/svg/2019contribs_web_web.svg",
-    title: "Finance contributions",responsive: true});
+    jQuery(document).ready(function(){
+      jQuery("#mapsvg").mapSvg({
+        width: 10000,
+        height: 10000,
+        regions: {
+          netherlands: {id: "netherlands",'id_no_spaces': "netherlands",fill: "#004c69",data: {country: "The Netherlands",value: "$10,035,295.00"}},
+          sweden: {id: "sweden",'id_no_spaces': "sweden",fill: "#11baad",data: {country: "Sweden",value: "$1,691,557.00"}},
+          core: {id: "core",'id_no_spaces': "core",fill: "#92c959",data: {country: "UNDP Core Funds (Staffing)",value: "$1,297,863.00"}},
+          switzerland: {id: "switzerland",'id_no_spaces': "switzerland",fill: "#00b05f",data: {country: "Switzerland",value: "$995,976.00"}},
+          uk: {id: "uk",'id_no_spaces': "uk",fill: "#c9e091",data: {country: "United Kingdom",value: "$640,769.00"}},
+          norway: {id: "norway",'id_no_spaces': "norway",fill: "#fbdc54",data: {country: "Norway",value: "$326,975.00"}},
+          us: {id: "us",'id_no_spaces': "us",fill: "#0096d4",data: {country: "United States",value: "$16,336,161.00"}},
+          canada: {id: "canada",'id_no_spaces': "canada",fill: "#0265b5",data: {country: "Canada",value: "$1,994,680.00"}},
+        },
+        viewBox: [0,0,1800,1800],
+        mouseOver: function(){
+          var region = this;
+          if (typeof region.data.country != "undefined") {
+            $('#cont1').append('<div class="tooltip-message"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+          }
+        },
+        mouseOut: function() {
+          $('.tooltip-message').remove();
+        }, 
+      source: "assets/svg/2019contribs_web_web.svg",
+      title: "Finance contributions",
+      responsive: true
+    });
   });
   </script>
   
