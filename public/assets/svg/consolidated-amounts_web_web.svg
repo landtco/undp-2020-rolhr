@@ -1152,11 +1152,11 @@
 		<circle id="gambia" fill="#00B05F" cx="783" cy="748.4" r="13.6"/>
 		<circle id="guinea" fill="#A5F238" cx="798.7" cy="773" r="13.6"/>
 		<circle id="caribbean" fill="#005772" cx="387.3" cy="716.5" r="13.6"/>
-		<circle id="central-america" fill="#11225E" cx="313.9" cy="702.9" r="13.6"/>
+		<circle id="central_america" fill="#11225E" cx="313.9" cy="702.9" r="13.6"/>
 		<circle id="haiti" fill="#92C959" cx="427.5" cy="698.8" r="13.6"/>
 		<circle id="honduras" fill="#C9E091" cx="346.8" cy="721.3" r="13.6"/>
 		<circle id="asean" fill="#00BFE9" cx="1573.3" cy="752.7" r="13.6"/>
-		<circle id="timor-leste" fill="#96341C" cx="1638.7" cy="887" r="13.6"/>
+		<circle id="timor_leste" fill="#96341C" cx="1638.7" cy="887" r="13.6"/>
 		<circle id="myanmar" fill="#A33E96" cx="1457.8" cy="714.4" r="13.6"/>
 		<circle id="nepal" fill="#6721C1" cx="1352.9" cy="621.8" r="13.6"/>
 		<circle id="pakistan" fill="#153A96" cx="1272.4" cy="642.7" r="13.6"/>
@@ -1164,7 +1164,7 @@
 		<circle id="armenia" fill="#8AD8E8" cx="1119.7" cy="543.8" r="13.6"/>
 		<circle id="lebanon" fill="#EE3F34" cx="1086.1" cy="582.6" r="13.6"/>
 		<circle id="palestine" fill="#FFCBA5" cx="1081.4" cy="608.2" r="13.6"/>
-		<circle id="sri-lanka" fill="#E68F66" cx="1355.6" cy="777.2" r="13.6"/>
+		<circle id="sri_lanka" fill="#E68F66" cx="1355.6" cy="777.2" r="13.6"/>
 		<circle id="tanzania" fill="#C56133" cx="1089" cy="873.3" r="13.6"/>
 		<circle id="zimbabwe" fill="#0A0A0A" cx="1032.8" cy="959.4" r="13.6"/>
 		<circle id="libya" fill="#CC193B" cx="972.2" cy="629.1" r="13.6"/>

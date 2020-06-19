@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link href="assets/css/mapsvg.css" rel="stylesheet">
+      <link href="assets/css/nanoscroller.css" rel="stylesheet">
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/jquery.mousewheel.min.js"></script>
+      <script src="assets/js/jquery.nanoscroller.min.js"></script>
+      <script type="text/javascript" src="assets/js/mapsvg.min.js"></script>
+      <link rel="stylesheet" href="https://use.typekit.net/yti7aig.css">
+    <title>UNDP - 2019 Pipeline & Earmarked Consolidaterd Amounts</title>
+  </head>
+  <body>
+
+  
+    <!-- section 2 -->
+    <div class="container-fluid p-0">
+      
+      <div id="cont1" class="equal-height row focus-sec-bg py-5 d-flex justify-content-center mx-0">
+         <div id="mapsvg"></div>
+      </div>
+    </div>
+   
+    <!--  -->
+    
+
+   <script type="text/javascript">
+    jQuery(document).ready(function(){
+      jQuery("#mapsvg").mapSvg({
+        width: 10000,
+        height: 10000,
+        regions: {
+          afghanistan: {id: "afghanistan",'id_no_spaces': "afghanistan",fill: "#BFE5F1",data: {country: "Afghanistan",value: "$2,929,617"}},
+          armenia: {id: "armenia",'id_no_spaces': "armenia",fill: "#8AD8E8",data: {country: "Armenia*",value: "$100,00"}},
+          asean: {id: "asean",'id_no_spaces': "asean",fill: "#00BFE9",data: {country: "ASEAN",value: "$200,00"}},
+          cameroon: {id: "cameroon",'id_no_spaces': "cameroon",fill: "#0096D4",data: {country: "Cameroon*",value: "$250,00"}},
+          car: {id: "car",'id_no_spaces': "car",fill: "#0265B5",data: {country: "Central African Republic",value: "$5,703,291"}},
+          caribbean: {id: "caribbean",'id_no_spaces': "caribbean",fill: "#005772",data: {country: "Caribbean*",value: "$125,000"}},
+          congo: {id: "congo",'id_no_spaces': "congo",fill: "#00E0D5",data: {country: "Democratic Republic of Congo",value: "$250,000"}},
+          ethiopia: {id: "ethiopia",'id_no_spaces': "ethiopia",fill: "#11BAAD",data: {country: "Ethiopia*",value: "$212,000"}},
+          gambia: {id: "gambia",'id_no_spaces': "gambia",fill: "#00B05F",data: {country: "Gambia*",value: "$100,000"}},
+          guinea: {id: "guinea",'id_no_spaces': "guinea",fill: "#A5F238",data: {country: "Guinea (Conakry)*",value: "$300,000"}},
+          haiti: {id: "haiti",'id_no_spaces': "haiti",fill: "#92C959",data: {country: "Haiti*",value: "$190,000"}},
+          honduras: {id: "honduras",'id_no_spaces': "honduras",fill: "#C9E091",data: {country: "Honduras*",value: "$250,000"}},
+          kosovo: {id: "kosovo",'id_no_spaces': "kosovo",fill: "#FBDC54",data: {country: "Kosovo*",value: "$150,000"}},
+          kyrgyz: {id: "kyrgyz",'id_no_spaces': "kyrgyz",fill: "#F3C316",data: {country: "Kyrgyz Republic*",value: "$300,000 - $399,530"}},
+          chad: {id: "chad",'id_no_spaces': "chad",fill: "#F5861F",data: {country: "Lake Chad Basin*",value: "$400,000"}},
+          lebanon: {id: "lebanon",'id_no_spaces': "lebanon",fill: "#EE3F34",data: {country: "Lebanon*",value: "$175,000 - $1,994,680"}},
+          libya: {id: "libya",'id_no_spaces': "libya",fill: "#CC193B",data: {country: "Libya*",value: "$500,000"}},
+          mali: {id: "mali",'id_no_spaces': "mali",fill: "#ED448A",data: {country: "Mali*",value: "$400,000"}},
+          moldova: {id: "moldova",'id_no_spaces': "moldova",fill: "#D30B94",data: {country: "Moldova*",value: "$1,740,000"}},
+          myanmar: {id: "myanmar",'id_no_spaces': "myanmar",fill: "#A33E96",data: {country: "Myanmar*",value: "$400,000"}},
+          nepal: {id: "nepal",'id_no_spaces': "nepal",fill: "#6721C1",data: {country: "Nepal*",value: "$300,000"}},
+          nigeria: {id: "nigeria",'id_no_spaces': "nigeria",fill: "#3E1A8E",data: {country: "Nigeria*",value: "$300,000"}},
+          central_america: {id: "central_america",'id_no_spaces': "central_america",fill: "#11225e",data: {country: "Northern Central America*",value: "$125,000"}},
+          pakistan: {id: "pakistan",'id_no_spaces': "pakistan",fill: "#153A96",data: {country: "Pakistan*",value: "$300,000"}},
+          palestine: {id: "palestine",'id_no_spaces': "palestine",fill: "#FFCBA5",data: {country: "Palestine*",value: "$350,000"}},
+          sri_lanka: {id: "sri_lanka",'id_no_spaces': "sri_lanka",fill: "#E68F66",data: {country: "Sri Lanka*",value: "$300,000"}},
+          sri_lanka: {id: "sri_lanka",'id_no_spaces': "sri_lanka",fill: "#E68F66",data: {country: "Sri Lanka*",value: "$300,000"}},
+          tanzania: {id: "tanzania",'id_no_spaces': "tanzania",fill: "#C56133",data: {country: "Tanzania",value: "$425,000"}},
+          timor_leste: {id: "timor_leste",'id_no_spaces': "timor_leste",fill: "#96341C",data: {country: "Timor Leste",value: "$100,000"}},
+          tunisia: {id: "tunisia",'id_no_spaces': "tunisia",fill: "#632819",data: {country: "Tunisia*",value: "$250,000"}},
+          ukraine: {id: "ukraine",'id_no_spaces': "ukraine",fill: "#646E7A",data: {country: "Ukraine*",value: "$100,000"}},
+          uzbekistan: {id: "uzbekistan",'id_no_spaces': "uzbekistan",fill: "#424A55",data: {country: "Uzbekistan*",value: "$250,000"}},
+          zimbabwe: {id: "zimbabwe",'id_no_spaces': "zimbabwe",fill: "#0A0A0A",data: {country: "Zimbabwe*",value: "$250,000"}},
+        },
+        viewBox: [0,0,1800,1800],
+        mouseOver: function(){
+          var region = this;
+          if (typeof region.data.country != "undefined") {
+            $('#cont1').append('<div class="tooltip-message"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+          }
+        },
+        mouseOut: function() {
+          $('.tooltip-message').remove();
+        }, 
+      source: "assets/svg/consolidated-amounts_web_web.svg",
+      title: "Finance contributions",
+      responsive: true
+    });
+  });
+  </script>
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="assets/js/bootstrap.min.js" ></script>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
+
+
