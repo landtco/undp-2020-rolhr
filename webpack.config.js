@@ -3,6 +3,7 @@ module.exports = {
 	entry: {
 		undp: "./app.js"
 	},
+	mode: "production",
 	output: {
 		path: __dirname + "/public/assets/js",
 		filename: "[name].bundle.js",
