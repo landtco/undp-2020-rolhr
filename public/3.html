@@ -52,11 +52,11 @@
         mouseOver: function(){
           var region = this;
           if (typeof region.data.country != "undefined") {
-            $('#cont1').append('<div class="tooltip-message"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+            $('#cont1').append('<div class="tooltip-message_3"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
           }
         },
         mouseOut: function() {
-          $('.tooltip-message').remove();
+          $('.tooltip-message_3').remove();
         }, 
       source: "assets/svg/overall-support_web-01.svg",
       title: "Finance contributions",

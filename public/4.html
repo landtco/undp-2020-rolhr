@@ -37,7 +37,7 @@
         height: 10000,
         regions: {
           afghanistan: {id: "afghanistan",'id_no_spaces': "afghanistan",fill: "#BFE5F1",data: {country: "Afghanistan",value: "$2,929,617"}},
-          armenia: {id: "armenia",'id_no_spaces': "armenia",fill: "#8AD8E8",data: {country: "Armenia*",value: "$100,00"}},
+          armenia: {id: "armenia",'id_no_spaces': "armenia",fill: "#8AD8E8",data: {country: "Armenia*",value: "$100,00", value2: "$200,00"}},
           asean: {id: "asean",'id_no_spaces': "asean",fill: "#00BFE9",data: {country: "ASEAN",value: "$200,00"}},
           cameroon: {id: "cameroon",'id_no_spaces': "cameroon",fill: "#0096D4",data: {country: "Cameroon*",value: "$250,00"}},
           car: {id: "car",'id_no_spaces': "car",fill: "#0265B5",data: {country: "Central African Republic",value: "$5,703,291"}},
@@ -74,11 +74,11 @@
         mouseOver: function(){
           var region = this;
           if (typeof region.data.country != "undefined") {
-            $('#cont1').append('<div class="tooltip-message"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+            $('#cont1').append('<div class="tooltip-message_4"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3>'+ (region.data.value2 ? '<h3 class="datavalue">' + region.data.value2 + '</h3>': '') + '</div>');
           }
         },
         mouseOut: function() {
-          $('.tooltip-message').remove();
+          $('.tooltip-message_4').remove();
         }, 
       source: "assets/svg/consolidated-amounts_web_web.svg",
       title: "Finance contributions",
@@ -98,5 +98,3 @@
 
   </body>
 </html>
-
-
