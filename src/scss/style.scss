@@ -94,8 +94,8 @@ div .tooltip-message {
   }
   &_2 {
     position: absolute;
-    top: 58%;
-    left: 40%;
+    top: 85%;
+    left: 35%;
     font-family: Helvetica, Arial;
     width: 250px;
     max-width: 300px;
@@ -175,7 +175,5 @@ div .tooltip-message {
 }
 
 #mapsvg {
-  background-color: red!important;
-  height: auto!important;
-  padding-bottom: auto!important;
+  background-color: yellow!important ;
 }

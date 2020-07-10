@@ -34,7 +34,7 @@
     jQuery(document).ready(function(){
       jQuery("#mapsvg").mapSvg({
         width: 10000,
-        height: 10000,
+        height: 300,
         regions: {
           netherlands: {id: "netherlands",'id_no_spaces': "netherlands",fill: "#004c69",data: {country: "The Netherlands",value: "$10,035,295.00"}},
           sweden: {id: "sweden",'id_no_spaces': "sweden",fill: "#11baad",data: {country: "Sweden",value: "$1,691,557.00"}},
@@ -45,7 +45,7 @@
           us: {id: "us",'id_no_spaces': "us",fill: "#0096d4",data: {country: "United States",value: "$16,336,161.00"}},
           canada: {id: "canada",'id_no_spaces': "canada",fill: "#0265b5",data: {country: "Canada",value: "$1,994,680.00"}},
         },
-        viewBox: [0,0,1800,1800],
+        viewBox: [0,0,1800,1150],
         mouseOver: function(){
           var region = this;
           if (typeof region.data.country != "undefined") {
