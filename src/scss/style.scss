@@ -1,69 +1,181 @@
 
-/*******************************************
- STYLESHEET
-********************************************/
+// @media (max-width: 991.98px) { 
+//   div .tooltip-message {
+//   width: 16%!important;
+//   top: 50%!important;
+//   left: 55.5%!important;
+//   height: 11%!important;}
+// }
+// @media (max-width: 812px) {
+//   div .tooltip-message {
+//     width: 32%!important;
+//   }
+// }
 
+// @media (max-width: 778px) {
+//   div .tooltip-message {
+//     top: 50%!important;
+//     left: 57.5%!important;
+//     width: 25%!important;
+//     height: 12%!important;
+//   }
 
-/*********************
-IMPORTING MODULES
-These files are needed at the beginning so that we establish all
-our mixins, functions, and variables that we'll be using across
-the whole project.
-*********************/
+//   .tooltip-message {
+//     padding:10px!important;
+//   }
+// }
+// @media (max-width: 575.98px) { 
+//   div .tooltip-message{
+//     height: 15%!important;
+//     width: 36%!important;
+//     left: 54.5%!important;
 
-//***************** CSS normalize
-@import "modules/normalize";
+//   }
+// }
 
-//***************** Sass variables
-@import "modules/variables";
+* {
+  padding: 0px;
+  margin:0px;
+}
 
-//***************** Sass functions
-@import "modules/functions";
+body {
+  font-family: proxima-nova;
+}
 
-//***************** import mixins
-@import "modules/mixins";
+h3 {
+  font-size: 21px !important;
+  font-weight: bold !important;
+  line-height: 21px !important;
+  font-family: proxima-nova;
+}
 
-//***************** typography
-@import "modules/typography";
+p {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 24px;
+  font-family: proxima-nova;
+}
+em {
+  font-family: proxima-nova;
+}
 
+.focus-sec-bg {
+  background-color: violet;
+//   padding:0 30px;
+}
 
-@import "modules/font_icons";
+#cont1 { 
+  position: relative
+}
 
+.mapsvg-wrap {
+  max-width: 900px!important;
+  margin: 0 auto;
+}
 
-/*********************
-IMPORTING PARTIALS
-Partials are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-*********************/
+div .tooltip-message {
+  &_1{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    font-family: Helvetica, Arial;
+    width: 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    background-color: white;
+    margin-left: -80px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    -moz-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    box-shadow: 0px 4px 34px -6px #CCD1DB; 
+  }
+  &_2 {
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    font-family: Helvetica, Arial;
+    width: 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    background-color: white;
+    margin-left: -80px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    -moz-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    box-shadow: 0px 4px 34px -6px #CCD1DB; 
+  }
+  &_3 {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-family: Helvetica, Arial;
+    width: 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    background-color: white;
+    margin-left: -80px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    -moz-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    box-shadow: 0px 4px 34px -6px #CCD1DB; 
+  }
+  &_4{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-family: Helvetica, Arial;
+    width: 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    background-color: white;
+    margin-left: -80px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    -moz-box-shadow: 0px 4px 34px -6px #CCD1DB;
+    box-shadow: 0px 4px 34px -6px #CCD1DB; 
+  }
+  
+}
 
-//***************** alert boxes
-@import "partials/header";
-@import "partials/footer";
-@import "partials/map";
-@import "partials/list";
-@import "partials/details";
-@import "partials/tiles";
+.mapsvg-tooltip.mapsvg-tooltip-visible {
+  -webkit-box-shadow: 0px 4px 34px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 34px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 34px -6px rgba(0,0,0,0.75); 
+}
 
+.datacountry {
+  color: #A9B3BE;
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
+.datavalue{
+  color:black;
+  font-size: 20px!important;
+  color: rgb(2, 101, 181)!important;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
+.mapsvg-scrollpane {
+  // background-color: pink;
+  // max-height: 700px!important;
+}
 
-/*********************
-IMPORTING VIEWS
-project specific and contain view or page specific styles 
-except for _base which is global stuff
-*********************/
-
-//***************** import base (misc global stuff)
-@import "views/base";
-
-
-
-/*********************
-IMPORTING VENDOR STYLES
-Pulls in any third party styles
-*********************/
-
-//***************** import vendor styles
-@import "vendor/mapsvg";
-
-
+#mapsvg {
+  background-color: red!important;
+  height: auto!important;
+  padding-bottom: auto!important;
+}
