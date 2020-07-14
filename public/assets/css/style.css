@@ -26,7 +26,7 @@ em {
 }
 
 .focus-sec-bg {
-  background-color: violet;
+  background-color: white;
 }
 
 #cont1 {
@@ -40,7 +40,7 @@ em {
 
 div .tooltip-message_1 {
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 65%;
   font-family: Helvetica, Arial;
   width: 250px;
@@ -76,7 +76,7 @@ div .tooltip-message_2 {
 }
 div .tooltip-message_3 {
   position: absolute;
-  top: 35%;
+  top: 55%;
   left: 40%;
   font-family: Helvetica, Arial;
   width: 250px;
@@ -129,10 +129,6 @@ div .tooltip-message_4 {
   font-size: 20px !important;
   color: #0265b5 !important;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-#mapsvg {
-  background-color: yellow !important;
 }
 
 /*# sourceMappingURL=style.css.map */
