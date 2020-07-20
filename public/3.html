@@ -12,8 +12,6 @@
   </head>
   <body>
 
-  
-    <!-- section 2 -->
     <div class="container-fluid p-0">
       
       <div id="cont1" class="equal-height row focus-sec-bg d-flex justify-content-center mx-0">
@@ -21,43 +19,40 @@
       </div>
     </div>
    
-    <!--  -->
-    
-
-   <script type="text/javascript">
-    jQuery(document).ready(function(){
-      jQuery("#mapsvg").mapSvg({
-        width: 10000,
-        height: 10000,
-        regions: {
-          technical_capacity: {id: "technical_capacity",'id_no_spaces': "technical_capacity",fill: "#0265B5",data: {country: "Technical Capacity",value: "$2,929,617"}},
-          policy_development: {id: "policy_development",'id_no_spaces': "policy_development",fill: "#005772",data: {country: "Policy Development",value: "$423,304"}},
-          policy_development_sdg: {id: "policy_development_sdg",'id_no_spaces': "policy_development_sdg",fill: "#00E0D5",data: {country: "Policy Development (SDG16)",value: "$84,115"}},
-          policy_development_human: {id: "policy_development_human",'id_no_spaces': "policy_development_human",fill: "#11BAAD",data: {country: "Policy Development (SDG16)",value: "$76,729"}},
-          knowledge_management: {id: "knowledge_management",'id_no_spaces': "knowledge_management",fill: "#A5F238",data: {country: "Knowledge Management",value: "$95,326"}},
-          knowledge_management: {id: "knowledge_management",'id_no_spaces': "knowledge_management",fill: "#A5F238",data: {country: "Knowledge Management",value: "$95,326"}},
-          global_capacity: {id: "global_capacity",'id_no_spaces': "global_capacity",fill: "#CC193B",data: {country: "Global Capacity Building and UN Agency Grants",value: "$537,457"}},
-          field_support: {id: "field_support",'id_no_spaces': "field_support",fill: "#FBDC54",data: {country: "Field Support from HQ",value: "$215,529"}},
-          programme_support: {id: "programme_support",'id_no_spaces': "programme_support",fill: "#6721C1",data: {country: "Programme Support",value: "$671,607"}},
-          support_costs: {id: "support_costs",'id_no_spaces': "support_costs",fill: "#424A55",data: {country: "Support Costs (GMS) - 8%",value: "$402,695"}},
-          
-        },
-        viewBox: [0,0,720,444],
-        mouseOver: function(){
-          var region = this;
-          if (typeof region.data.country != "undefined") {
-            $('#cont1').append('<div class="tooltip-message_3"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
-          }
-        },
-        mouseOut: function() {
-          $('.tooltip-message_3').remove();
-        }, 
-      source: "assets/svg/overall_support.svg",
-      title: "2019 Overall Support",
-      responsive: true
+    <script type="text/javascript">
+      jQuery(document).ready(function(){
+        jQuery("#mapsvg").mapSvg({
+          width: 10000,
+          height: 10000,
+          regions: {
+            technical_capacity: {id: "technical_capacity",'id_no_spaces': "technical_capacity",fill: "#0265B5",data: {country: "Technical Capacity",value: "$2,929,617"}},
+            policy_development: {id: "policy_development",'id_no_spaces': "policy_development",fill: "#005772",data: {country: "Policy Development",value: "$423,304"}},
+            policy_development_sdg: {id: "policy_development_sdg",'id_no_spaces': "policy_development_sdg",fill: "#00E0D5",data: {country: "Policy Development (SDG16)",value: "$84,115"}},
+            policy_development_human: {id: "policy_development_human",'id_no_spaces': "policy_development_human",fill: "#11BAAD",data: {country: "Policy Development (SDG16)",value: "$76,729"}},
+            knowledge_management: {id: "knowledge_management",'id_no_spaces': "knowledge_management",fill: "#A5F238",data: {country: "Knowledge Management",value: "$95,326"}},
+            knowledge_management: {id: "knowledge_management",'id_no_spaces': "knowledge_management",fill: "#A5F238",data: {country: "Knowledge Management",value: "$95,326"}},
+            global_capacity: {id: "global_capacity",'id_no_spaces': "global_capacity",fill: "#CC193B",data: {country: "Global Capacity Building and UN Agency Grants",value: "$537,457"}},
+            field_support: {id: "field_support",'id_no_spaces': "field_support",fill: "#FBDC54",data: {country: "Field Support from HQ",value: "$215,529"}},
+            programme_support: {id: "programme_support",'id_no_spaces': "programme_support",fill: "#6721C1",data: {country: "Programme Support",value: "$671,607"}},
+            support_costs: {id: "support_costs",'id_no_spaces': "support_costs",fill: "#424A55",data: {country: "Support Costs (GMS) - 8%",value: "$402,695"}},
+            
+          },
+          viewBox: [0,0,720,444],
+          mouseOver: function(){
+            var region = this;
+            if (typeof region.data.country != "undefined") {
+              $('#cont1').append('<div class="tooltip-message_3"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+            }
+          },
+          mouseOut: function() {
+            $('.tooltip-message_3').remove();
+          }, 
+        source: "assets/svg/overall_support.svg",
+        title: "2019 Overall Support",
+        responsive: true
+      });
     });
-  });
-  </script>
+    </script>
   </body>
 </html>
 

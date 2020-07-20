@@ -61,7 +61,6 @@ em {
 
 .focus-sec-bg {
   background-color: white;
-//   padding:0 30px;
 }
 
 #cont1 { 
@@ -79,13 +78,12 @@ div .tooltip-message {
     top: 60%;
     left: 65%;
     font-family: Helvetica, Arial;
-    width: 250px;
+    width: 200px;
     max-width: 300px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     height: auto;
     background-color: white;
-    margin-left: -80px;
     border: 1px solid #eee;
     border-radius: 4px;
     -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
@@ -97,13 +95,12 @@ div .tooltip-message {
     top: 85%;
     left: 35%;
     font-family: Helvetica, Arial;
-    width: 250px;
+    width: 200px;
     max-width: 300px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     height: auto;
     background-color: white;
-    margin-left: -80px;
     border: 1px solid #eee;
     border-radius: 4px;
     -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
@@ -115,13 +112,12 @@ div .tooltip-message {
     top: 55%;
     left: 40%;
     font-family: Helvetica, Arial;
-    width: 250px;
+    width: 200px;
     max-width: 300px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     height: auto;
     background-color: white;
-    margin-left: -80px;
     border: 1px solid #eee;
     border-radius: 4px;
     -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
@@ -131,15 +127,14 @@ div .tooltip-message {
   &_4{
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 35%;
     font-family: Helvetica, Arial;
-    width: 250px;
+    width: 200px;
     max-width: 300px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     height: auto;
     background-color: white;
-    margin-left: -80px;
     border: 1px solid #eee;
     border-radius: 4px;
     -webkit-box-shadow: 0px 4px 34px -6px #CCD1DB;
@@ -154,18 +149,36 @@ div .tooltip-message {
   box-shadow: 0px 4px 34px -6px rgba(0,0,0,0.75); 
 }
 
-.datacountry {
-  color: #A9B3BE;
-  font-size: 14px;
-  margin-bottom: 0px;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.datavalue{
-  color:black;
-  font-size: 20px!important;
-  color: rgb(2, 101, 181)!important;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.data{
+  &country{
+    color: #A9B3BE;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.2em;
+  }
+  &value{
+    color:black;
+    font-size: 20px!important;
+    color: rgb(2, 101, 181)!important;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 0px!important;
+    &--pipeline{
+      color:black;
+      font-size: 20px!important;
+      color: rgb(2, 101, 181)!important;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-bottom: 0px!important;
+    }
+    &--earmarked{
+      color:black;
+      font-size: 20px!important;
+      color: #00b05f!important;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      margin-bottom: 0px!important;
+    }
+  }
+  
 }
 
 #mapsvg{
