@@ -51,7 +51,12 @@
         mouseOver: function(){
           var region = this;
           if (typeof region.data.country != "undefined") {
-            $('#mapsvg').append('<div class="tooltip-message_2"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+            if( region.data.country == "UNHCR"){
+              $('#mapsvg').append('<div class="tooltip-message_2"><p class="datacountry">UNHCR</p><h3 class="datavalue" style="padding-bottom:5px!important">246,407</h3><p class="datacountry">EOSG</p><h3 class="datavalue" style="padding-bottom:5px!important">18,496</h3><p class="datacountry">Austria</p><h3 class="datavalue" style="padding-bottom:5px!important">5,738</h3><p class="datacountry">Private Contribution</p><h3 class="datavalue" style="padding-bottom:5px!important">1,000</h3></div>');
+            } else {
+              $('#mapsvg').append('<div class="tooltip-message_2"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+            }
+            
           }
         },
         mouseOut: function() {
