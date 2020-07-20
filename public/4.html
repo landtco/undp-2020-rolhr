@@ -69,7 +69,7 @@
           var region = this;
           if (typeof region.data.country != "undefined") {
             
-            $('#cont1').append('<div class="tooltip-message_4"><p class="datacountry">'+ region.data.country +'</p>' + (region.data.pipeline ? '<h3 class="datavalue--pipeline">' + region.data.pipeline + '</h3>': '') + (region.data.earmarked ? '<h3 class="datavalue--earmarked">' + region.data.earmarked + '</h3>': '') + '</div>');
+            $('#mapsvg').append('<div class="tooltip-message_4"><p class="datacountry">'+ region.data.country +'</p>' + (region.data.pipeline ? '<h3 class="datavalue--pipeline">' + region.data.pipeline + '</h3>': '') + (region.data.earmarked ? '<h3 class="datavalue--earmarked">' + region.data.earmarked + '</h3>': '') + '</div>');
           }
         },
         mouseOut: function() {

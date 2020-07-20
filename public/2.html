@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/css/mapsvg.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vhw6fgh.css">
     <script src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/mapsvg.min.js"></script>
     <title>UNDP - Lifetime Contributions</title>
@@ -50,7 +51,7 @@
         mouseOver: function(){
           var region = this;
           if (typeof region.data.country != "undefined") {
-            $('#cont1').append('<div class="tooltip-message_2"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
+            $('#mapsvg').append('<div class="tooltip-message_2"><p class="datacountry">'+ region.data.country +'</p><h3 class="datavalue">' + region.data.value + '</h3></div>');
           }
         },
         mouseOut: function() {
