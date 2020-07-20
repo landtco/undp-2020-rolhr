@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "clean": "rm -rf assets/js/* && rm -rf assets/css/*",
-    "sass": "sass --watch src/scss/style.scss:public/assets/css/style.css src/scss/eli.scss:public/assets/css/eli.css",
+    "sass": "sass --watch src/scss/style.scss:public/assets/css/style.css",
     "webpack": "webpack --devtool sourcemap",
     "dev": "echo '=> Bundle JS' && npm run webpack && echo '=> Compile SASS' && npm run sass",
     "dev_watch": "npm run sass -- --watch | npm run webpack -- --watch",
