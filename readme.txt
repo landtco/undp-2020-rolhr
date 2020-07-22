@@ -21,6 +21,6 @@ Requirements:
 NPM Build Scripts
 ****************************************************************
 
-	To build the scss run npm run sass. 
-	TO build the js into a bundle run npm run build.
-	To build scss and js run npm run dev_watch
+	To build the scss run "npm run sass". 
+	TO build the js into a bundle run "npm run build".
+	To build scss and js run "npm run dev_watch".
