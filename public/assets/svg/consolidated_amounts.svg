@@ -1152,7 +1152,7 @@
 		<circle id="gambia" fill="#00B05F" cx="783" cy="748.4" r="13.6"/>
 		<circle id="guinea" fill="#A5F238" cx="798.7" cy="773" r="13.6"/>
 		<circle id="caribbean" fill="#005772" cx="387.3" cy="716.5" r="13.6"/>
-		<circle id="central-america" fill="#11225E" cx="313.9" cy="702.9" r="13.6"/>
+		<circle id="central_america" fill="#11225E" cx="313.9" cy="702.9" r="13.6"/>
 		<circle id="haiti" fill="#92C959" cx="427.5" cy="698.8" r="13.6"/>
 		<circle id="honduras" fill="#C9E091" cx="346.8" cy="721.3" r="13.6"/>
 		<circle id="asean" fill="#00BFE9" cx="1573.3" cy="752.7" r="13.6"/>
